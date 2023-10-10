@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background-color: cadetblue;
+    color:#ed3115;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='30' patternTransform='scale(5) rotate(15)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(206,11%,44.5%,1)'/><path d='M1-6.5v13h28v-13H1zm15 15v13h28v-13H16zm-15 15v13h28v-13H1z'  stroke-width='1' stroke='none' fill='hsla(209,12.7%,35.5%,1)'/><path d='M31-6.5v13h28v-13H31zm-45 15v13h28v-13h-28zm60 0v13h28v-13H46zm-15 15v13h28v-13H31z'  stroke-width='1' stroke='none' fill='hsla(210,14.8%,23.9%,1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+.main-title {
+    background-color: white;
+    color: #ed3115;
+    font-size: 2.5rem;
+    display: inline;
+    text-align: center;
+    padding: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.buttons button{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 5rem;
+    margin: 0 10px;
+
+   
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipeContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+}
+
+#title{
+    font-size: 25px;
+    
+}
+
+#ingredients{
+    font-size: 20px;
+}
+  
+#ingredients li {
+    margin-bottom: 10px;
+    color: #555;
+
+}
+
+li {
+    font-weight: bold;
+    list-style-type: none;
+}
+  
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="main-title">Food Recipe 😋</h1>
+    <form action="/recipe" method="POST" class="buttons">
+        <button type="submit" value="rice" name="choice">🍚</button>
+        <button type="submit" value="pasta" name="choice">🍝</button>
+        <button type="submit" value="taco" name="choice">🌮</button>
+    </form>
+
+    <div class="recipeContainer" class="hidden">
+        <%if (locals.recipe) {%>
+    
+          <h2 id="recipeTitle">
+            <%= recipe.name %>
+          </h2>
+    
+          <h3>Ingredients:</h3>
+          <ul id="ingredientsList">
+            <li>
+              <%= recipe.ingredients.protein.name %>, <%= recipe.ingredients.protein.preparation %>
+            </li>
+            <li>
+              <%= recipe.ingredients.salsa.name %>
+    
+            </li>
+            <% recipe.ingredients.toppings.forEach(topping=> { %>
+              <li>
+                <%= topping.quantity %> of <%= topping.name %>
+              </li>
+              <% }) %>
+          </ul>
+    
+          <%} else {%>
+            <h2>Pick your favourite ingredient 👆</h2>
+            <%}%>
+
+</body>
+</html>
